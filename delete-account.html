@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - xNow One</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 24px;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 40px;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 16px;
+        }
+
+        .subtitle {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: #94a3b8;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+
+        ul {
+            color: #94a3b8;
+            margin-left: 24px;
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+
+        .email-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: white;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .email-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3);
+        }
+
+        .info-box {
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 24px;
+        }
+
+        .info-box h3 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #a5b4fc;
+        }
+
+        .info-box p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        .back-link {
+            color: #a5b4fc;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 40px;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 24px;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+
+        footer a {
+            color: #a5b4fc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="logo">
+            <div class="logo-icon">X</div>
+            xNow One
+        </a>
+
+        <h1>Delete Your Account</h1>
+        <p class="subtitle">
+            We respect your right to control your personal data. You can request complete deletion of your account and all associated data.
+        </p>
+
+        <div class="card">
+            <h2>How to Request Account Deletion</h2>
+            <p>To delete your account and all associated data, please send an email to our support team with the following information:</p>
+            <ul>
+                <li>Your registered email address</li>
+                <li>Subject line: "Account Deletion Request"</li>
+                <li>Confirmation that you want to delete your account</li>
+            </ul>
+            
+            <a href="mailto:support@xnow-one.com?subject=Account%20Deletion%20Request&body=I%20would%20like%20to%20request%20the%20deletion%20of%20my%20account%20and%20all%20associated%20data.%0A%0AMy%20registered%20email%3A%20%0A%0APlease%20confirm%20once%20the%20deletion%20is%20complete." class="email-link">
+                📧 Send Deletion Request
+            </a>
+
+            <div class="info-box">
+                <h3>⏱️ Processing Time</h3>
+                <p>We will process your request within 30 days as required by GDPR. You will receive a confirmation email once your data has been deleted.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>What Data Will Be Deleted</h2>
+            <p>Upon account deletion, we will permanently remove:</p>
+            <ul>
+                <li>Your profile information (name, email, phone)</li>
+                <li>Your profile photo</li>
+                <li>All appointments and booking history</li>
+                <li>Business data (if you're a manager)</li>
+                <li>All associated records from our systems</li>
+            </ul>
+            <p><strong>Note:</strong> This action is irreversible. Once deleted, your data cannot be recovered.</p>
+        </div>
+
+        <a href="index.html" class="back-link">
+            ← Back to Home
+        </a>
+    </div>
+
+    <footer>
+        <p>© 2025 arthXcode d.o.o. | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a></p>
+    </footer>
+</body>
+</html>
+
